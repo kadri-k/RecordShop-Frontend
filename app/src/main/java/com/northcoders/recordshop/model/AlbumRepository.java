@@ -46,4 +46,9 @@ public class AlbumRepository {
         });
         return mutableLiveData;
     }
+
+    public void addAlbum(Album album) {
+        AlbumApiService albumApiService = RetrofitInstance.getService();
+        Call<Album> call = albumApiService.addAlbum(album);
+    }
 }
