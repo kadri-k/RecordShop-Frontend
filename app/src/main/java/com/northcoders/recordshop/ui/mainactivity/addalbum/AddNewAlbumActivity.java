@@ -9,8 +9,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.northcoders.recordshop.R;
+import com.northcoders.recordshop.databinding.ActivityAddNewAlbumBinding;
 
 public class AddNewAlbumActivity extends AppCompatActivity {
+
+    private ActivityAddNewAlbumBinding binding;
+    private
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
