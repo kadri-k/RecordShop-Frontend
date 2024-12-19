@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
         // method to display albums in the RecyclerView
         private void displayInRecyclerView() {
             // initialise the RecyclerView
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             LinearLayoutManager layoutManager = new LinearLayoutManager(this);
             recyclerView.setLayoutManager(layoutManager);
 
-            recyclerView.setHasFixedSize(true);
+            albumAdapter.notifyDataSetChanged();
 
 
     }
